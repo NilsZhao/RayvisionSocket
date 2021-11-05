@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "RayvisionSocket",
+	"Description": "Auto connect to 3dcat through web.socket so that your unreal app can send/receive messages to/from web end.",
+	"Category": "Other",
+	"CreatedBy": "Sim",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "RayvisionSocket",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
