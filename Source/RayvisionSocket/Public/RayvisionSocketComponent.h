@@ -65,40 +65,6 @@ public:
 	//自动重连频率
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category="Sockets", meta=(EditCondition = "bAutoReconnect"))
 	float ReconnectInterval = 1.f;
-	
-	//是否使用前台WebSocket消息来控制角色移动
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Sockets")
-	bool bUseSocketJoystick = true;
-
-	/**
-	 *允许的最大网络延迟事件, 超过这个时间后, 手柄值将会归零.<br/>
-	 *注意: 将该值调整过小会导致输入异常.
-	 */
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="Sockets|SocketJoystick", meta=(EditCondition = "bUseSocketJoystick",
-		ClampMin = "0.0", ClampMax = "100.0", UIMin = "0.0", UIMax = "100.0"))
-	float MaxNetDelayPermitted = 1.0;
-
-	//是否启用手柄延迟, 启用手柄延迟来降低当手柄数值突然变化时的镜头突变.
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Sockets|SocketJoystick", meta=(EditCondition = "bUseSocketJoystick"))
-	bool bEnableJoystickMoveLag = true;
-
-	//手柄延迟的回复速度, 数值越大, 延后的程度越小.
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category="Sockets|SocketJoystick", meta=(EditCondition = "bUseSocketJoystick"))
-	float JoystickLagSpeed = 1;
-	
-	//取最近一次收到的移动指令.
-	UPROPERTY(BlueprintReadWrite, VisibleInstanceOnly, Category="Sockets|SocketJoystick")
-	FJoyMoveMessage LastJoyMove;
-
-	//当前手柄移动轴.
-	UPROPERTY(BlueprintReadOnly, VisibleInstanceOnly, Category="Sockets|SocketJoystick")
-	FVector2D JoystickAxis;
-
-	//是否记录WebSocket消息日志.
-	UPROPERTY(BlueprintReadOnly, VisibleInstanceOnly, Category="Sockets|SocketJoystick")
-	bool bLogSocketMessage = true;
-	
-	const FString JoyMoveEvent = "joy_move";
 public:
 	/**
 	 *绑定连接事件.
@@ -106,6 +72,9 @@ public:
 	UFUNCTION(Category="Sockets")
 	void BindEvents();
 
+	UFUNCTION(Category="Sockets")
+	void UnbindEvents() const;
+	
 	/**
 	 *进行自动连接, 若处于编辑器状态, 则连接至TestUrl, 若处于非编辑器状态, 则连接至3dcat.live
 	 */
@@ -143,9 +112,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category="Sockets")
 	void Disconnect();
 
-private:
-	void MatchJoyMoveCommand(const FString& Message);
-
 	FTimerHandle ReconnectTimerHandle;
 	FTimerDynamicDelegate ReconnectDelegate;
+
+	FDelegateHandle OnConnectHandle;
+	FDelegateHandle OnConnectErrorHandle;
+	FDelegateHandle OnMessageHandle;
+	FDelegateHandle OnRawMessageHandle;
+	FDelegateHandle OnMessageSentHandle;
+	FDelegateHandle OnCloseHandle;
 };
