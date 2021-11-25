@@ -14,7 +14,7 @@ struct FJoyMoveMessage;
 #endif
 #define RAYVISIONSOCKET_RayvisionSocketComponent_generated_h
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_19_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_19_DELEGATE \
 struct _Script_RayvisionSocket_eventReceivedJoystickMoveSignature_Parms \
 { \
 	FJoyMoveMessage ReceivedMove; \
@@ -27,7 +27,7 @@ static inline void FReceivedJoystickMoveSignature_DelegateWrapper(const FMultica
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_18_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_18_DELEGATE \
 struct _Script_RayvisionSocket_eventOnMessageSentSignature_Parms \
 { \
 	FString MessageString; \
@@ -40,7 +40,7 @@ static inline void FOnMessageSentSignature_DelegateWrapper(const FMulticastScrip
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_17_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_17_DELEGATE \
 struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms \
 { \
 	FString Data; \
@@ -53,7 +53,7 @@ static inline void FOnRawMessageSignature_DelegateWrapper(const FMulticastScript
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_16_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_16_DELEGATE \
 struct _Script_RayvisionSocket_eventOnMessageSignature_Parms \
 { \
 	FString Message; \
@@ -66,7 +66,7 @@ static inline void FOnMessageSignature_DelegateWrapper(const FMulticastScriptDel
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_15_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_15_DELEGATE \
 struct _Script_RayvisionSocket_eventOnClosedSignature_Parms \
 { \
 	int32 StatusCode; \
@@ -83,7 +83,7 @@ static inline void FOnClosedSignature_DelegateWrapper(const FMulticastScriptDele
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_14_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_14_DELEGATE \
 struct _Script_RayvisionSocket_eventOnConnectionErrorSignature_Parms \
 { \
 	FString Error; \
@@ -96,15 +96,15 @@ static inline void FOnConnectionErrorSignature_DelegateWrapper(const FMulticastS
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_13_DELEGATE \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_13_DELEGATE \
 static inline void FOnConnectedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnConnectedSignature) \
 { \
 	OnConnectedSignature.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDisconnect); \
 	DECLARE_FUNCTION(execSendData); \
@@ -112,10 +112,11 @@ static inline void FOnConnectedSignature_DelegateWrapper(const FMulticastScriptD
 	DECLARE_FUNCTION(execConnectToUrl); \
 	DECLARE_FUNCTION(execConnectTo3dcat); \
 	DECLARE_FUNCTION(execAutoConnect); \
+	DECLARE_FUNCTION(execUnbindEvents); \
 	DECLARE_FUNCTION(execBindEvents);
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDisconnect); \
 	DECLARE_FUNCTION(execSendData); \
@@ -123,10 +124,11 @@ static inline void FOnConnectedSignature_DelegateWrapper(const FMulticastScriptD
 	DECLARE_FUNCTION(execConnectToUrl); \
 	DECLARE_FUNCTION(execConnectTo3dcat); \
 	DECLARE_FUNCTION(execAutoConnect); \
+	DECLARE_FUNCTION(execUnbindEvents); \
 	DECLARE_FUNCTION(execBindEvents);
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS_NO_PURE_DECLS \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesURayvisionSocketComponent(); \
 	friend struct Z_Construct_UClass_URayvisionSocketComponent_Statics; \
@@ -135,7 +137,7 @@ public: \
 	DECLARE_SERIALIZER(URayvisionSocketComponent)
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS \
 private: \
 	static void StaticRegisterNativesURayvisionSocketComponent(); \
 	friend struct Z_Construct_UClass_URayvisionSocketComponent_Statics; \
@@ -144,12 +146,12 @@ public: \
 	DECLARE_SERIALIZER(URayvisionSocketComponent)
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_STANDARD_CONSTRUCTORS \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API URayvisionSocketComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(URayvisionSocketComponent) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, URayvisionSocketComponent); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(URayvisionSocketComponent); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(URayvisionSocketComponent); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API URayvisionSocketComponent(URayvisionSocketComponent&&); \
@@ -157,39 +159,39 @@ private: \
 public:
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_ENHANCED_CONSTRUCTORS \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API URayvisionSocketComponent(URayvisionSocketComponent&&); \
 	NO_API URayvisionSocketComponent(const URayvisionSocketComponent&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, URayvisionSocketComponent); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(URayvisionSocketComponent); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(URayvisionSocketComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(URayvisionSocketComponent)
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_PRIVATE_PROPERTY_OFFSET
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_22_PROLOG
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_GENERATED_BODY_LEGACY \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_22_PROLOG
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_PRIVATE_PROPERTY_OFFSET \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_STANDARD_CONSTRUCTORS \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_GENERATED_BODY \
+#define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_PRIVATE_PROPERTY_OFFSET \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS_NO_PURE_DECLS \
-	RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_ENHANCED_CONSTRUCTORS \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -197,7 +199,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> RAYVISIONSOCKET_API UClass* StaticClass<class URayvisionSocketComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID RayvisionSocket_Plugins_RayvisionSocket_main_Source_RayvisionSocket_Public_RayvisionSocketComponent_h
+#define CURRENT_FILE_ID HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

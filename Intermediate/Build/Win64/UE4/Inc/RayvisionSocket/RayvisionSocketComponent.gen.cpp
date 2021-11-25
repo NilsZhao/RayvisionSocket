@@ -25,7 +25,6 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 	RAYVISIONSOCKET_API UClass* Z_Construct_UClass_URayvisionSocketComponent_NoRegister();
 	RAYVISIONSOCKET_API UClass* Z_Construct_UClass_URayvisionSocketComponent();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_ReceivedJoystickMoveSignature__DelegateSignature_Statics
 	{
@@ -348,6 +347,13 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		P_THIS->AutoConnect();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(URayvisionSocketComponent::execUnbindEvents)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UnbindEvents();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(URayvisionSocketComponent::execBindEvents)
 	{
 		P_FINISH;
@@ -366,6 +372,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 			{ "Disconnect", &URayvisionSocketComponent::execDisconnect },
 			{ "SendData", &URayvisionSocketComponent::execSendData },
 			{ "SendMessage", &URayvisionSocketComponent::execSendMessage },
+			{ "UnbindEvents", &URayvisionSocketComponent::execUnbindEvents },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -620,6 +627,29 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Sockets" },
+		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "UnbindEvents", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_URayvisionSocketComponent_NoRegister()
 	{
 		return URayvisionSocketComponent::StaticClass();
@@ -677,33 +707,6 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReconnectInterval_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReconnectInterval;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUseSocketJoystick_MetaData[];
-#endif
-		static void NewProp_bUseSocketJoystick_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bUseSocketJoystick;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bEnableJoystickMoveLag_MetaData[];
-#endif
-		static void NewProp_bEnableJoystickMoveLag_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnableJoystickMoveLag;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JoystickLagSpeed_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JoystickLagSpeed;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LastJoyMove_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_LastJoyMove;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JoystickAxis_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_JoystickAxis;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bLogSocketMessage_MetaData[];
-#endif
-		static void NewProp_bLogSocketMessage_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bLogSocketMessage;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -720,6 +723,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_Disconnect, "Disconnect" }, // 2797239563
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_SendData, "SendData" }, // 1716688512
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_SendMessage, "SendMessage" }, // 306845204
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents, "UnbindEvents" }, // 361320841
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::Class_MetaDataParams[] = {
@@ -823,73 +827,6 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval = { "ReconnectInterval", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(URayvisionSocketComponent, ReconnectInterval), METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick_MetaData[] = {
-		{ "Category", "Sockets" },
-		{ "Comment", "//\xe6\x98\xaf\xe5\x90\xa6\xe4\xbd\xbf\xe7\x94\xa8\xe5\x89\x8d\xe5\x8f\xb0WebSocket\xe6\xb6\x88\xe6\x81\xaf\xe6\x9d\xa5\xe6\x8e\xa7\xe5\x88\xb6\xe8\xa7\x92\xe8\x89\xb2\xe7\xa7\xbb\xe5\x8a\xa8\n" },
-		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-		{ "ToolTip", "\xe6\x98\xaf\xe5\x90\xa6\xe4\xbd\xbf\xe7\x94\xa8\xe5\x89\x8d\xe5\x8f\xb0WebSocket\xe6\xb6\x88\xe6\x81\xaf\xe6\x9d\xa5\xe6\x8e\xa7\xe5\x88\xb6\xe8\xa7\x92\xe8\x89\xb2\xe7\xa7\xbb\xe5\x8a\xa8" },
-	};
-#endif
-	void Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick_SetBit(void* Obj)
-	{
-		((URayvisionSocketComponent*)Obj)->bUseSocketJoystick = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick = { "bUseSocketJoystick", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(URayvisionSocketComponent), &Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick_SetBit, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag_MetaData[] = {
-		{ "Category", "Sockets|SocketJoystick" },
-		{ "Comment", "//\xe6\x98\xaf\xe5\x90\xa6\xe5\x90\xaf\xe7\x94\xa8\xe6\x89\x8b\xe6\x9f\x84\xe5\xbb\xb6\xe8\xbf\x9f, \xe5\x90\xaf\xe7\x94\xa8\xe6\x89\x8b\xe6\x9f\x84\xe5\xbb\xb6\xe8\xbf\x9f\xe6\x9d\xa5\xe9\x99\x8d\xe4\xbd\x8e\xe5\xbd\x93\xe6\x89\x8b\xe6\x9f\x84\xe6\x95\xb0\xe5\x80\xbc\xe7\xaa\x81\xe7\x84\xb6\xe5\x8f\x98\xe5\x8c\x96\xe6\x97\xb6\xe7\x9a\x84\xe9\x95\x9c\xe5\xa4\xb4\xe7\xaa\x81\xe5\x8f\x98.\n" },
-		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-		{ "ToolTip", "\xe6\x98\xaf\xe5\x90\xa6\xe5\x90\xaf\xe7\x94\xa8\xe6\x89\x8b\xe6\x9f\x84\xe5\xbb\xb6\xe8\xbf\x9f, \xe5\x90\xaf\xe7\x94\xa8\xe6\x89\x8b\xe6\x9f\x84\xe5\xbb\xb6\xe8\xbf\x9f\xe6\x9d\xa5\xe9\x99\x8d\xe4\xbd\x8e\xe5\xbd\x93\xe6\x89\x8b\xe6\x9f\x84\xe6\x95\xb0\xe5\x80\xbc\xe7\xaa\x81\xe7\x84\xb6\xe5\x8f\x98\xe5\x8c\x96\xe6\x97\xb6\xe7\x9a\x84\xe9\x95\x9c\xe5\xa4\xb4\xe7\xaa\x81\xe5\x8f\x98." },
-	};
-#endif
-	void Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag_SetBit(void* Obj)
-	{
-		((URayvisionSocketComponent*)Obj)->bEnableJoystickMoveLag = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag = { "bEnableJoystickMoveLag", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(URayvisionSocketComponent), &Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag_SetBit, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickLagSpeed_MetaData[] = {
-		{ "Category", "Sockets|SocketJoystick" },
-		{ "Comment", "//\xe6\x89\x8b\xe6\x9f\x84\xe5\xbb\xb6\xe8\xbf\x9f\xe7\x9a\x84\xe5\x9b\x9e\xe5\xa4\x8d\xe9\x80\x9f\xe5\xba\xa6, \xe6\x95\xb0\xe5\x80\xbc\xe8\xb6\x8a\xe5\xa4\xa7, \xe5\xbb\xb6\xe5\x90\x8e\xe7\x9a\x84\xe7\xa8\x8b\xe5\xba\xa6\xe8\xb6\x8a\xe5\xb0\x8f.\n" },
-		{ "EditCondition", "bEnableJoystickMoveLag" },
-		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-		{ "ToolTip", "\xe6\x89\x8b\xe6\x9f\x84\xe5\xbb\xb6\xe8\xbf\x9f\xe7\x9a\x84\xe5\x9b\x9e\xe5\xa4\x8d\xe9\x80\x9f\xe5\xba\xa6, \xe6\x95\xb0\xe5\x80\xbc\xe8\xb6\x8a\xe5\xa4\xa7, \xe5\xbb\xb6\xe5\x90\x8e\xe7\x9a\x84\xe7\xa8\x8b\xe5\xba\xa6\xe8\xb6\x8a\xe5\xb0\x8f." },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickLagSpeed = { "JoystickLagSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(URayvisionSocketComponent, JoystickLagSpeed), METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickLagSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickLagSpeed_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_LastJoyMove_MetaData[] = {
-		{ "Category", "Sockets|SocketJoystick" },
-		{ "Comment", "//\xe5\x8f\x96\xe6\x9c\x80\xe8\xbf\x91\xe4\xb8\x80\xe6\xac\xa1\xe6\x94\xb6\xe5\x88\xb0\xe7\x9a\x84\xe7\xa7\xbb\xe5\x8a\xa8\xe6\x8c\x87\xe4\xbb\xa4.\n" },
-		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-		{ "ToolTip", "\xe5\x8f\x96\xe6\x9c\x80\xe8\xbf\x91\xe4\xb8\x80\xe6\xac\xa1\xe6\x94\xb6\xe5\x88\xb0\xe7\x9a\x84\xe7\xa7\xbb\xe5\x8a\xa8\xe6\x8c\x87\xe4\xbb\xa4." },
-	};
-#endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_LastJoyMove = { "LastJoyMove", nullptr, (EPropertyFlags)0x0010000000020805, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(URayvisionSocketComponent, LastJoyMove), Z_Construct_UScriptStruct_FJoyMoveMessage, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_LastJoyMove_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_LastJoyMove_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickAxis_MetaData[] = {
-		{ "Category", "Sockets|SocketJoystick" },
-		{ "Comment", "//\xe5\xbd\x93\xe5\x89\x8d\xe6\x89\x8b\xe6\x9f\x84\xe7\xa7\xbb\xe5\x8a\xa8\xe8\xbd\xb4.\n" },
-		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-		{ "ToolTip", "\xe5\xbd\x93\xe5\x89\x8d\xe6\x89\x8b\xe6\x9f\x84\xe7\xa7\xbb\xe5\x8a\xa8\xe8\xbd\xb4." },
-	};
-#endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickAxis = { "JoystickAxis", nullptr, (EPropertyFlags)0x0010000000020815, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(URayvisionSocketComponent, JoystickAxis), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickAxis_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickAxis_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage_MetaData[] = {
-		{ "Category", "Sockets|SocketJoystick" },
-		{ "Comment", "//\xe6\x98\xaf\xe5\x90\xa6\xe8\xae\xb0\xe5\xbd\x95WebSocket\xe6\xb6\x88\xe6\x81\xaf\xe6\x97\xa5\xe5\xbf\x97.\n" },
-		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-		{ "ToolTip", "\xe6\x98\xaf\xe5\x90\xa6\xe8\xae\xb0\xe5\xbd\x95WebSocket\xe6\xb6\x88\xe6\x81\xaf\xe6\x97\xa5\xe5\xbf\x97." },
-	};
-#endif
-	void Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage_SetBit(void* Obj)
-	{
-		((URayvisionSocketComponent*)Obj)->bLogSocketMessage = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage = { "bLogSocketMessage", nullptr, (EPropertyFlags)0x0010000000020815, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(URayvisionSocketComponent), &Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage_SetBit, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_URayvisionSocketComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnConnected,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnConnectionError,
@@ -902,12 +839,6 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bAutoConnect,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bAutoReconnectOnFailed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bUseSocketJoystick,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bEnableJoystickMoveLag,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickLagSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_LastJoyMove,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_JoystickAxis,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bLogSocketMessage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_URayvisionSocketComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<URayvisionSocketComponent>::IsAbstract,
@@ -936,7 +867,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(URayvisionSocketComponent, 2350990447);
+	IMPLEMENT_CLASS(URayvisionSocketComponent, 688558770);
 	template<> RAYVISIONSOCKET_API UClass* StaticClass<URayvisionSocketComponent>()
 	{
 		return URayvisionSocketComponent::StaticClass();

@@ -37,7 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocket_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x7F7D1C6C,
+				0xC7A32211,
 				0xA4599513,
 				METADATA_PARAMS(nullptr, 0)
 			};
