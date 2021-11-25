@@ -38,7 +38,7 @@ static struct FScriptStruct_RayvisionSocket_StaticRegisterNativesFJoyMoveMessage
 {
 	FScriptStruct_RayvisionSocket_StaticRegisterNativesFJoyMoveMessage()
 	{
-		UScriptStruct::DeferCppStructOps<FJoyMoveMessage>(FName(TEXT("JoyMoveMessage")));
+		UScriptStruct::DeferCppStructOps(FName(TEXT("JoyMoveMessage")),new UScriptStruct::TCppStructOps<FJoyMoveMessage>);
 	}
 } ScriptStruct_RayvisionSocket_StaticRegisterNativesFJoyMoveMessage;
 	struct Z_Construct_UScriptStruct_FJoyMoveMessage_Statics

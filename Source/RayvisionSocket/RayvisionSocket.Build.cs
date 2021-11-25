@@ -8,6 +8,9 @@ public class RayvisionSocket : ModuleRules
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
+		PrecompileForTargets = PrecompileTargetsType.Any;
+		
+		
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...

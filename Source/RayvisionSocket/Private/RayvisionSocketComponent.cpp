@@ -3,9 +3,10 @@
 
 #include "RayvisionSocketComponent.h"
 
-//#include "SocketLogger.h"
-#include "JsonUtilities/Public/JsonObjectConverter.h"
 #include "WebSockets/Public/WebSocketsModule.h"
+#include "Misc/CommandLine.h"
+#include "Engine/World.h"
+#include "TimerManager.h"
 
 
 // Sets default values for this component's properties
