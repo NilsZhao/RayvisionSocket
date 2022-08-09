@@ -112,6 +112,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category="Sockets")
 	void Disconnect();
 
+	
+	UFUNCTION(BlueprintCallable, Category = "Sockets")
+	static bool Base64Decode(const FString& Source, FString& Dest);
+
+	UFUNCTION(BlueprintCallable, Category = "Sockets")
+	static FString Base64Encode(const FString& Source);
+
 	FTimerHandle ReconnectTimerHandle;
 	FTimerDynamicDelegate ReconnectDelegate;
 

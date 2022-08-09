@@ -3,9 +3,11 @@
 
 #include "RayvisionSocketComponent.h"
 
-//#include "SocketLogger.h"
-#include "JsonUtilities/Public/JsonObjectConverter.h"
 #include "WebSockets/Public/WebSocketsModule.h"
+#include "Misc/CommandLine.h"
+#include "Engine/World.h"
+#include "TimerManager.h"
+#include "Misc/Base64.h"
 
 
 // Sets default values for this component's properties
@@ -188,4 +190,25 @@ void URayvisionSocketComponent::Disconnect()
 	UnbindEvents();
 	Socket->Close();
 	Socket = nullptr;
+}
+
+bool URayvisionSocketComponent::Base64Decode(const FString& Source, FString& Dest)
+{
+	TArray<uint8> ByteArray;
+	const bool Success = FBase64::Decode(Source, ByteArray);
+
+	const FUTF8ToTCHAR StringSrc = FUTF8ToTCHAR((const ANSICHAR*)ByteArray.GetData(), ByteArray.Num());
+	Dest = FString();
+	Dest.AppendChars(StringSrc.Get(), StringSrc.Length());
+
+	return Success;
+}
+
+FString URayvisionSocketComponent::Base64Encode(const FString& Source)
+{
+	TArray<uint8> ByteArray;
+	const FTCHARToUTF8 StringSrc = FTCHARToUTF8(Source.GetCharArray().GetData());
+	ByteArray.Append((uint8*)StringSrc.Get(), StringSrc.Length());
+
+	return FBase64::Encode(ByteArray);
 }
