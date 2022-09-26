@@ -1,2 +1,6 @@
 云应用开发文档:
 https://www.3dcat.live/support/start/cloudAppIntro.html
+
+
+蓝图项目请把插件放到引擎插件的Marketplace文件夹下；
+UE_5.0\Engine\Plugins\Marketplace
