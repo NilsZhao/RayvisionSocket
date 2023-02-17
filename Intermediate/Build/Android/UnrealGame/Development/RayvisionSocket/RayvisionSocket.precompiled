@@ -1,6 +1,5 @@
 {
 	"OutputFiles": [
-		"Module.RayvisionSocket.cppa8.o",
-		"Module.RayvisionSocket.gen.cppa8.o"
+		"Module.RayvisionSocket.cppa8.o"
 	]
 }

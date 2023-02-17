@@ -1,6 +1,5 @@
 {
 	"OutputFiles": [
-		"Module.RayvisionSocket.cpp.obj",
-		"Module.RayvisionSocket.gen.cpp.obj"
+		"Module.RayvisionSocket.cpp.obj"
 	]
 }
