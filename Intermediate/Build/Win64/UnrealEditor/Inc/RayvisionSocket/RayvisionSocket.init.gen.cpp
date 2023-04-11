@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocket_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xD3E76C80,
+				0x370B8DB9,
 				0xC8D8CFA9,
 				METADATA_PARAMS(nullptr, 0)
 			};
@@ -41,5 +41,5 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocket_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_RayvisionSocket.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_RayvisionSocket(Z_Construct_UPackage__Script_RayvisionSocket, TEXT("/Script/RayvisionSocket"), Z_Registration_Info_UPackage__Script_RayvisionSocket, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD3E76C80, 0xC8D8CFA9));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_RayvisionSocket(Z_Construct_UPackage__Script_RayvisionSocket, TEXT("/Script/RayvisionSocket"), Z_Registration_Info_UPackage__Script_RayvisionSocket, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x370B8DB9, 0xC8D8CFA9));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -14,7 +14,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnConnectedSignature);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnConnectionErrorSignature, const FString&, Error);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnClosedSignature, int32, StatusCode, const FString&, Reason, bool, bWasClean);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMessageSignature, const FString&, Message);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnRawMessageSignature, const FString&, Data);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnRawMessageSignature, TArray<uint8>, Data);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMessageSentSignature, const FString&, MessageString);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FReceivedJoystickMoveSignature, const FJoyMoveMessage&, ReceivedMove);
 
