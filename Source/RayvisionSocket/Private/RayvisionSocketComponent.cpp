@@ -93,10 +93,9 @@ void URayvisionSocketComponent::BindEvents()
 
 		OnRawMessageHandle = Socket->OnRawMessage().AddLambda([&](const void* Data, SIZE_T Size, SIZE_T BytesRemaining)
 		{
-			UE_LOG(LogTemp, Log, TEXT("Raw message received: %s"), UTF8_TO_TCHAR(Data));
-			
-			const FString DataString = UTF8_TO_TCHAR(Data);
-			OnRawMessage.Broadcast(DataString);
+			TArray<uint8> DataArr;
+			DataArr.Append((uint8*)Data, Size);
+			OnRawMessage.Broadcast(DataArr);
 		});
 
 		OnMessageSentHandle = Socket->OnMessageSent().AddLambda([&](const FString& Message)

@@ -68,9 +68,9 @@ static inline void FOnMessageSignature_DelegateWrapper(const FMulticastScriptDel
 #define FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_17_DELEGATE \
 struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms \
 { \
-	FString Data; \
+	TArray<uint8> Data; \
 }; \
-static inline void FOnRawMessageSignature_DelegateWrapper(const FMulticastScriptDelegate& OnRawMessageSignature, const FString& Data) \
+static inline void FOnRawMessageSignature_DelegateWrapper(const FMulticastScriptDelegate& OnRawMessageSignature, const TArray<uint8>& Data) \
 { \
 	_Script_RayvisionSocket_eventOnRawMessageSignature_Parms Parms; \
 	Parms.Data=Data; \

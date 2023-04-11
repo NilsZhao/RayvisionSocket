@@ -182,25 +182,20 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 	{
 		struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms
 		{
-			FString Data;
+			TArray<uint8> Data;
 		};
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Data_MetaData[];
-#endif
-		static const UECodeGen_Private::FStrPropertyParams NewProp_Data;
+		static const UECodeGen_Private::FBytePropertyParams NewProp_Data_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_Data;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data = { "Data", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_RayvisionSocket_eventOnRawMessageSignature_Parms, Data), METADATA_PARAMS(Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_MetaData)) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_Inner = { "Data", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data = { "Data", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(_Script_RayvisionSocket_eventOnRawMessageSignature_Parms, Data), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data,
 	};
 #if WITH_METADATA
@@ -885,7 +880,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnRawMessage = { "OnRawMessage", nullptr, (EPropertyFlags)0x0010100010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(URayvisionSocketComponent, OnRawMessage), Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnRawMessage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnRawMessage_MetaData)) }; // 3786035916
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnRawMessage = { "OnRawMessage", nullptr, (EPropertyFlags)0x0010100010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(URayvisionSocketComponent, OnRawMessage), Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnRawMessage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnRawMessage_MetaData)) }; // 3729080
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_OnMessageSent_MetaData[] = {
 		{ "Category", "Sockets" },
@@ -995,9 +990,9 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_URayvisionSocketComponent, URayvisionSocketComponent::StaticClass, TEXT("URayvisionSocketComponent"), &Z_Registration_Info_UClass_URayvisionSocketComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URayvisionSocketComponent), 1494239345U) },
+		{ Z_Construct_UClass_URayvisionSocketComponent, URayvisionSocketComponent::StaticClass, TEXT("URayvisionSocketComponent"), &Z_Registration_Info_UClass_URayvisionSocketComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URayvisionSocketComponent), 3275531179U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_2263276(TEXT("/Script/RayvisionSocket"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_3959022719(TEXT("/Script/RayvisionSocket"),
 		Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
