@@ -110,25 +110,20 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 	{
 		struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms
 		{
-			FString Data;
+			TArray<uint8> Data;
 		};
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Data_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Data;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Data_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Data;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data = { "Data", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_RayvisionSocket_eventOnRawMessageSignature_Parms, Data), METADATA_PARAMS(Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_MetaData, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_Inner = { "Data", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data = { "Data", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_RayvisionSocket_eventOnRawMessageSignature_Parms, Data), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics::NewProp_Data,
 	};
 #if WITH_METADATA
@@ -301,6 +296,23 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+	DEFINE_FUNCTION(URayvisionSocketComponent::execBase64Encode)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Source);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=URayvisionSocketComponent::Base64Encode(Z_Param_Source);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(URayvisionSocketComponent::execBase64Decode)
+	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_Source);
+		P_GET_PROPERTY_REF(FStrProperty,Z_Param_Out_Dest);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=URayvisionSocketComponent::Base64Decode(Z_Param_Source,Z_Param_Out_Dest);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(URayvisionSocketComponent::execDisconnect)
 	{
 		P_FINISH;
@@ -366,6 +378,8 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		UClass* Class = URayvisionSocketComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AutoConnect", &URayvisionSocketComponent::execAutoConnect },
+			{ "Base64Decode", &URayvisionSocketComponent::execBase64Decode },
+			{ "Base64Encode", &URayvisionSocketComponent::execBase64Encode },
 			{ "BindEvents", &URayvisionSocketComponent::execBindEvents },
 			{ "ConnectTo3dcat", &URayvisionSocketComponent::execConnectTo3dcat },
 			{ "ConnectToUrl", &URayvisionSocketComponent::execConnectToUrl },
@@ -397,6 +411,105 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics
+	{
+		struct RayvisionSocketComponent_eventBase64Decode_Parms
+		{
+			FString Source;
+			FString Dest;
+			bool ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Source_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Source;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Dest;
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Source_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Source = { "Source", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(RayvisionSocketComponent_eventBase64Decode_Parms, Source), METADATA_PARAMS(Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Source_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Source_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Dest = { "Dest", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(RayvisionSocketComponent_eventBase64Decode_Parms, Dest), METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((RayvisionSocketComponent_eventBase64Decode_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(RayvisionSocketComponent_eventBase64Decode_Parms), &Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Source,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_Dest,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Sockets" },
+		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "Base64Decode", nullptr, nullptr, sizeof(RayvisionSocketComponent_eventBase64Decode_Parms), Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics
+	{
+		struct RayvisionSocketComponent_eventBase64Encode_Parms
+		{
+			FString Source;
+			FString ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Source_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Source;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_Source_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_Source = { "Source", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(RayvisionSocketComponent_eventBase64Encode_Parms, Source), METADATA_PARAMS(Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_Source_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_Source_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(RayvisionSocketComponent_eventBase64Encode_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_Source,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Sockets" },
+		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "Base64Encode", nullptr, nullptr, sizeof(RayvisionSocketComponent_eventBase64Encode_Parms), Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -717,6 +830,8 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_URayvisionSocketComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect, "AutoConnect" }, // 1492443141
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode, "Base64Decode" }, // 3214297049
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode, "Base64Encode" }, // 1504626202
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_BindEvents, "BindEvents" }, // 2392279469
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat, "ConnectTo3dcat" }, // 1858847289
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl, "ConnectToUrl" }, // 4112681925
@@ -867,7 +982,7 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(URayvisionSocketComponent, 688558770);
+	IMPLEMENT_CLASS(URayvisionSocketComponent, 3406755574);
 	template<> RAYVISIONSOCKET_API UClass* StaticClass<URayvisionSocketComponent>()
 	{
 		return URayvisionSocketComponent::StaticClass();

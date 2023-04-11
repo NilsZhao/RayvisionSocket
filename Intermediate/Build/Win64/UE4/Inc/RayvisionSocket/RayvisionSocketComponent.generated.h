@@ -43,9 +43,9 @@ static inline void FOnMessageSentSignature_DelegateWrapper(const FMulticastScrip
 #define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_17_DELEGATE \
 struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms \
 { \
-	FString Data; \
+	TArray<uint8> Data; \
 }; \
-static inline void FOnRawMessageSignature_DelegateWrapper(const FMulticastScriptDelegate& OnRawMessageSignature, const FString& Data) \
+static inline void FOnRawMessageSignature_DelegateWrapper(const FMulticastScriptDelegate& OnRawMessageSignature, const TArray<uint8>& Data) \
 { \
 	_Script_RayvisionSocket_eventOnRawMessageSignature_Parms Parms; \
 	Parms.Data=Data; \
@@ -106,6 +106,8 @@ static inline void FOnConnectedSignature_DelegateWrapper(const FMulticastScriptD
 #define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_SPARSE_DATA
 #define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execBase64Encode); \
+	DECLARE_FUNCTION(execBase64Decode); \
 	DECLARE_FUNCTION(execDisconnect); \
 	DECLARE_FUNCTION(execSendData); \
 	DECLARE_FUNCTION(execSendMessage); \
@@ -118,6 +120,8 @@ static inline void FOnConnectedSignature_DelegateWrapper(const FMulticastScriptD
 
 #define HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execBase64Encode); \
+	DECLARE_FUNCTION(execBase64Decode); \
 	DECLARE_FUNCTION(execDisconnect); \
 	DECLARE_FUNCTION(execSendData); \
 	DECLARE_FUNCTION(execSendMessage); \
