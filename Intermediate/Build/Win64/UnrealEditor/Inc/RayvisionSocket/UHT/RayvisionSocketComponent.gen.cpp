@@ -45,6 +45,10 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FOnConnectedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnConnectedSignature)
+{
+	OnConnectedSignature.ProcessMulticastDelegate<UObject>(NULL);
+}
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_OnConnectionErrorSignature__DelegateSignature_Statics
 	{
 		struct _Script_RayvisionSocket_eventOnConnectionErrorSignature_Parms
@@ -85,6 +89,16 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FOnConnectionErrorSignature_DelegateWrapper(const FMulticastScriptDelegate& OnConnectionErrorSignature, const FString& Error)
+{
+	struct _Script_RayvisionSocket_eventOnConnectionErrorSignature_Parms
+	{
+		FString Error;
+	};
+	_Script_RayvisionSocket_eventOnConnectionErrorSignature_Parms Parms;
+	Parms.Error=Error;
+	OnConnectionErrorSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_OnClosedSignature__DelegateSignature_Statics
 	{
 		struct _Script_RayvisionSocket_eventOnClosedSignature_Parms
@@ -138,6 +152,20 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FOnClosedSignature_DelegateWrapper(const FMulticastScriptDelegate& OnClosedSignature, int32 StatusCode, const FString& Reason, bool bWasClean)
+{
+	struct _Script_RayvisionSocket_eventOnClosedSignature_Parms
+	{
+		int32 StatusCode;
+		FString Reason;
+		bool bWasClean;
+	};
+	_Script_RayvisionSocket_eventOnClosedSignature_Parms Parms;
+	Parms.StatusCode=StatusCode;
+	Parms.Reason=Reason;
+	Parms.bWasClean=bWasClean ? true : false;
+	OnClosedSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_OnMessageSignature__DelegateSignature_Statics
 	{
 		struct _Script_RayvisionSocket_eventOnMessageSignature_Parms
@@ -178,6 +206,16 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FOnMessageSignature_DelegateWrapper(const FMulticastScriptDelegate& OnMessageSignature, const FString& Message)
+{
+	struct _Script_RayvisionSocket_eventOnMessageSignature_Parms
+	{
+		FString Message;
+	};
+	_Script_RayvisionSocket_eventOnMessageSignature_Parms Parms;
+	Parms.Message=Message;
+	OnMessageSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_OnRawMessageSignature__DelegateSignature_Statics
 	{
 		struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms
@@ -213,6 +251,16 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FOnRawMessageSignature_DelegateWrapper(const FMulticastScriptDelegate& OnRawMessageSignature, const TArray<uint8>& Data)
+{
+	struct _Script_RayvisionSocket_eventOnRawMessageSignature_Parms
+	{
+		TArray<uint8> Data;
+	};
+	_Script_RayvisionSocket_eventOnRawMessageSignature_Parms Parms;
+	Parms.Data=Data;
+	OnRawMessageSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_OnMessageSentSignature__DelegateSignature_Statics
 	{
 		struct _Script_RayvisionSocket_eventOnMessageSentSignature_Parms
@@ -253,6 +301,16 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FOnMessageSentSignature_DelegateWrapper(const FMulticastScriptDelegate& OnMessageSentSignature, const FString& MessageString)
+{
+	struct _Script_RayvisionSocket_eventOnMessageSentSignature_Parms
+	{
+		FString MessageString;
+	};
+	_Script_RayvisionSocket_eventOnMessageSentSignature_Parms Parms;
+	Parms.MessageString=MessageString;
+	OnMessageSentSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	struct Z_Construct_UDelegateFunction_RayvisionSocket_ReceivedJoystickMoveSignature__DelegateSignature_Statics
 	{
 		struct _Script_RayvisionSocket_eventReceivedJoystickMoveSignature_Parms
@@ -293,6 +351,16 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 		}
 		return ReturnFunction;
 	}
+void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelegate& ReceivedJoystickMoveSignature, FJoyMoveMessage const& ReceivedMove)
+{
+	struct _Script_RayvisionSocket_eventReceivedJoystickMoveSignature_Parms
+	{
+		FJoyMoveMessage ReceivedMove;
+	};
+	_Script_RayvisionSocket_eventReceivedJoystickMoveSignature_Parms Parms;
+	Parms.ReceivedMove=ReceivedMove;
+	ReceivedJoystickMoveSignature.ProcessMulticastDelegate<UObject>(&Parms);
+}
 	DEFINE_FUNCTION(URayvisionSocketComponent::execBase64Encode)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_Source);
@@ -985,15 +1053,15 @@ void EmptyLinkFunctionForGeneratedCodeRayvisionSocketComponent() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(URayvisionSocketComponent);
 	URayvisionSocketComponent::~URayvisionSocketComponent() {}
-	struct Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics
+	struct Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_URayvisionSocketComponent, URayvisionSocketComponent::StaticClass, TEXT("URayvisionSocketComponent"), &Z_Registration_Info_UClass_URayvisionSocketComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URayvisionSocketComponent), 3275531179U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_3959022719(TEXT("/Script/RayvisionSocket"),
-		Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_3959022719(TEXT("/Script/RayvisionSocket"),
+		Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
