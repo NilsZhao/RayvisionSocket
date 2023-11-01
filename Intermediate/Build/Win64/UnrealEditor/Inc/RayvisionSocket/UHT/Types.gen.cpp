@@ -69,28 +69,28 @@ template<> RAYVISIONSOCKET_API UScriptStruct* StaticStruct<FJoyMoveMessage>()
 		{ "ModuleRelativePath", "Public/Types.h" },
 	};
 #endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName = { "EventName", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FJoyMoveMessage, EventName), METADATA_PARAMS(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName_MetaData)) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName = { "EventName", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJoyMoveMessage, EventName), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName_MetaData), Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp_MetaData[] = {
 		{ "Category", "JoyMove" },
 		{ "ModuleRelativePath", "Public/Types.h" },
 	};
 #endif
-	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp = { "Timestamp", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FJoyMoveMessage, Timestamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp_MetaData)) };
+	const UECodeGen_Private::FInt64PropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp = { "Timestamp", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJoyMoveMessage, Timestamp), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp_MetaData), Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X_MetaData[] = {
 		{ "Category", "JoyMove" },
 		{ "ModuleRelativePath", "Public/Types.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X = { "X", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FJoyMoveMessage, X), METADATA_PARAMS(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X = { "X", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJoyMoveMessage, X), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X_MetaData), Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_X_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y_MetaData[] = {
 		{ "Category", "JoyMove" },
 		{ "ModuleRelativePath", "Public/Types.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y = { "Y", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FJoyMoveMessage, Y), METADATA_PARAMS(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y = { "Y", nullptr, (EPropertyFlags)0x0010000001000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJoyMoveMessage, Y), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y_MetaData), Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Y_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_EventName,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewProp_Timestamp,
@@ -102,14 +102,15 @@ template<> RAYVISIONSOCKET_API UScriptStruct* StaticStruct<FJoyMoveMessage>()
 		nullptr,
 		&NewStructOps,
 		"JoyMoveMessage",
-		sizeof(FJoyMoveMessage),
-		alignof(FJoyMoveMessage),
 		Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::PropPointers),
+		sizeof(FJoyMoveMessage),
+		alignof(FJoyMoveMessage),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::Struct_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::PropPointers) < 2048);
 	UScriptStruct* Z_Construct_UScriptStruct_FJoyMoveMessage()
 	{
 		if (!Z_Registration_Info_UScriptStruct_JoyMoveMessage.InnerSingleton)
@@ -139,6 +140,7 @@ template<> RAYVISIONSOCKET_API UScriptStruct* StaticStruct<FJoyMoveMessage>()
 		(UObject* (*)())Z_Construct_UClass_UObject,
 		(UObject* (*)())Z_Construct_UPackage__Script_RayvisionSocket,
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UTypes_Statics::DependentSingletons) < 16);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTypes_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "Types.h" },
@@ -161,7 +163,7 @@ template<> RAYVISIONSOCKET_API UScriptStruct* StaticStruct<FJoyMoveMessage>()
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UTypes_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UTypes_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTypes_Statics::Class_MetaDataParams), Z_Construct_UClass_UTypes_Statics::Class_MetaDataParams)
 	};
 	UClass* Z_Construct_UClass_UTypes()
 	{
@@ -178,19 +180,19 @@ template<> RAYVISIONSOCKET_API UScriptStruct* StaticStruct<FJoyMoveMessage>()
 	UTypes::UTypes(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UTypes);
 	UTypes::~UTypes() {}
-	struct Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics
+	struct Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics
 	{
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ScriptStructInfo[] = {
-		{ FJoyMoveMessage::StaticStruct, Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewStructOps, TEXT("JoyMoveMessage"), &Z_Registration_Info_UScriptStruct_JoyMoveMessage, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJoyMoveMessage), 1980128941U) },
+	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ScriptStructInfo[] = {
+		{ FJoyMoveMessage::StaticStruct, Z_Construct_UScriptStruct_FJoyMoveMessage_Statics::NewStructOps, TEXT("JoyMoveMessage"), &Z_Registration_Info_UScriptStruct_JoyMoveMessage, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJoyMoveMessage), 592587350U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UTypes, UTypes::StaticClass, TEXT("UTypes"), &Z_Registration_Info_UClass_UTypes, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTypes), 2910167956U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UTypes, UTypes::StaticClass, TEXT("UTypes"), &Z_Registration_Info_UClass_UTypes, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTypes), 1533335230U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_3464554826(TEXT("/Script/RayvisionSocket"),
-		Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ClassInfo),
-		Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE5TestProject_Ray2_GO_RayvisionSocket_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ScriptStructInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_1021814736(TEXT("/Script/RayvisionSocket"),
+		Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ClassInfo),
+		Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_Types_h_Statics::ScriptStructInfo),
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

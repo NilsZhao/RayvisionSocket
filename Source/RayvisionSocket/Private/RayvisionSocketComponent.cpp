@@ -3,7 +3,7 @@
 
 #include "RayvisionSocketComponent.h"
 
-#include "WebSockets/Public/WebSocketsModule.h"
+#include "WebSocketsModule.h"
 #include "Misc/CommandLine.h"
 #include "Engine/World.h"
 #include "TimerManager.h"

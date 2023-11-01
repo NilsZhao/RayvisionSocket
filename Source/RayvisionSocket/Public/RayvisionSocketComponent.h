@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Types.h"
 #include "Components/ActorComponent.h"
-#include "WebSockets/Public/IWebSocket.h"
+#include "IWebSocket.h"
 #include "RayvisionSocketComponent.generated.h"
 
 
