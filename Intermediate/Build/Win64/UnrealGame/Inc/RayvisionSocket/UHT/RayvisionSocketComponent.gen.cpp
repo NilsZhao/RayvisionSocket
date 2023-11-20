@@ -476,13 +476,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect_Statics::Function_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\xe8\xbf\x9b\xe8\xa1\x8c\xe8\x87\xaa\xe5\x8a\xa8\xe8\xbf\x9e\xe6\x8e\xa5, \xe8\x8b\xa5\xe5\xa4\x84\xe4\xba\x8e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8a\xb6\xe6\x80\x81, \xe5\x88\x99\xe8\xbf\x9e\xe6\x8e\xa5\xe8\x87\xb3TestUrl, \xe8\x8b\xa5\xe5\xa4\x84\xe4\xba\x8e\xe9\x9d\x9e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8a\xb6\xe6\x80\x81, \xe5\x88\x99\xe8\xbf\x9e\xe6\x8e\xa5\xe8\x87\xb3""3dcat.live\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe8\xbf\x9b\xe8\xa1\x8c\xe8\x87\xaa\xe5\x8a\xa8\xe8\xbf\x9e\xe6\x8e\xa5, \xe8\x8b\xa5\xe5\xa4\x84\xe4\xba\x8e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8a\xb6\xe6\x80\x81, \xe5\x88\x99\xe8\xbf\x9e\xe6\x8e\xa5\xe8\x87\xb3TestUrl, \xe8\x8b\xa5\xe5\xa4\x84\xe4\xba\x8e\xe9\x9d\x9e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8a\xb6\xe6\x80\x81, \xe5\x88\x99\xe8\xbf\x9e\xe6\x8e\xa5\xe8\x87\xb3""3dcat.live" },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "AutoConnect", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect_Statics::Function_MetaDataParams) };
@@ -608,13 +604,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_BindEvents_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\xe7\xbb\x91\xe5\xae\x9a\xe8\xbf\x9e\xe6\x8e\xa5\xe4\xba\x8b\xe4\xbb\xb6.\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe7\xbb\x91\xe5\xae\x9a\xe8\xbf\x9e\xe6\x8e\xa5\xe4\xba\x8b\xe4\xbb\xb6." },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_BindEvents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "BindEvents", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_BindEvents_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_BindEvents_Statics::Function_MetaDataParams) };
@@ -637,13 +629,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\xe8\xbf\x9e\xe6\x8e\xa5\xe5\x88\xb0""3dcat, \xe7\xab\xaf\xe5\x8f\xa3\xe4\xbc\x9a\xe9\x80\x9a\xe8\xbf\x87\xe5\x91\xbd\xe4\xbb\xa4\xe8\xa1\x8c\xe8\x8e\xb7\xe5\x8f\x96.\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe8\xbf\x9e\xe6\x8e\xa5\xe5\x88\xb0""3dcat, \xe7\xab\xaf\xe5\x8f\xa3\xe4\xbc\x9a\xe9\x80\x9a\xe8\xbf\x87\xe5\x91\xbd\xe4\xbb\xa4\xe8\xa1\x8c\xe8\x8e\xb7\xe5\x8f\x96." },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "ConnectTo3dcat", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat_Statics::Function_MetaDataParams) };
@@ -676,13 +664,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * \xe6\xa0\xb9\xe6\x8d\xae\xe6\x8c\x87\xe5\xae\x9a\xe7\x9a\x84URL\xe5\xbb\xba\xe7\xab\x8b\xe4\xb8\x80\xe4\xb8\xaa\xe6\x96\xb0\xe7\x9a\x84WebSocket\xe8\xbf\x9e\xe6\x8e\xa5, \xe5\x8e\x9f\xe6\x9c\x89\xe7\x9a\x84\xe9\x93\xbe\xe6\x8e\xa5\xe5\xb0\x86\xe4\xbc\x9a\xe8\xa2\xab\xe8\x87\xaa\xe5\x8a\xa8\xe5\x85\xb3\xe9\x97\xad.\n\x09 * @param NewUrl \xe9\x9c\x80\xe8\xa6\x81\xe8\xbf\x9b\xe8\xa1\x8c\xe8\xbf\x9e\xe6\x8e\xa5\xe7\x9a\x84url\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe6\xa0\xb9\xe6\x8d\xae\xe6\x8c\x87\xe5\xae\x9a\xe7\x9a\x84URL\xe5\xbb\xba\xe7\xab\x8b\xe4\xb8\x80\xe4\xb8\xaa\xe6\x96\xb0\xe7\x9a\x84WebSocket\xe8\xbf\x9e\xe6\x8e\xa5, \xe5\x8e\x9f\xe6\x9c\x89\xe7\x9a\x84\xe9\x93\xbe\xe6\x8e\xa5\xe5\xb0\x86\xe4\xbc\x9a\xe8\xa2\xab\xe8\x87\xaa\xe5\x8a\xa8\xe5\x85\xb3\xe9\x97\xad.\n@param NewUrl \xe9\x9c\x80\xe8\xa6\x81\xe8\xbf\x9b\xe8\xa1\x8c\xe8\xbf\x9e\xe6\x8e\xa5\xe7\x9a\x84url" },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "ConnectToUrl", nullptr, nullptr, Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::PropPointers), sizeof(Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::RayvisionSocketComponent_eventConnectToUrl_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl_Statics::Function_MetaDataParams) };
@@ -707,13 +691,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_Disconnect_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\xe5\x85\xb3\xe9\x97\xad\xe5\xbd\x93\xe5\x89\x8d\xe8\xbf\x9e\xe6\x8e\xa5.\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe5\x85\xb3\xe9\x97\xad\xe5\xbd\x93\xe5\x89\x8d\xe8\xbf\x9e\xe6\x8e\xa5." },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_Disconnect_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "Disconnect", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_Disconnect_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_Disconnect_Statics::Function_MetaDataParams) };
@@ -775,14 +755,10 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\xe5\x8f\x91\xe9\x80\x81\xe4\xb8\x80\xe4\xb8\xaa\xe6\x95\xb0\xe7\xbb\x84\xe5\x88\xb0\xe6\x9c\x8d\xe5\x8a\xa1\xe7\xab\xaf.\n\x09 */" },
-#endif
 		{ "CPP_Default_bIsBinary", "false" },
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe5\x8f\x91\xe9\x80\x81\xe4\xb8\x80\xe4\xb8\xaa\xe6\x95\xb0\xe7\xbb\x84\xe5\x88\xb0\xe6\x9c\x8d\xe5\x8a\xa1\xe7\xab\xaf." },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "SendData", nullptr, nullptr, Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::PropPointers), sizeof(Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::RayvisionSocketComponent_eventSendData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_SendData_Statics::Function_MetaDataParams) };
@@ -834,13 +810,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *\xe5\x8f\x91\xe9\x80\x81\xe4\xb8\x80\xe4\xb8\xaa\xe5\xad\x97\xe7\xac\xa6\xe4\xb8\xb2\xe5\x88\xb0\xe6\x9c\x8d\xe5\x8a\xa1\xe7\xab\xaf.\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe5\x8f\x91\xe9\x80\x81\xe4\xb8\x80\xe4\xb8\xaa\xe5\xad\x97\xe7\xac\xa6\xe4\xb8\xb2\xe5\x88\xb0\xe6\x9c\x8d\xe5\x8a\xa1\xe7\xab\xaf." },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_URayvisionSocketComponent, nullptr, "SendMessage", nullptr, nullptr, Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::PropPointers), sizeof(Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::RayvisionSocketComponent_eventSendMessage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::Function_MetaDataParams), Z_Construct_UFunction_URayvisionSocketComponent_SendMessage_Statics::Function_MetaDataParams) };
@@ -946,15 +918,15 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_URayvisionSocketComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect, "AutoConnect" }, // 36004580
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_AutoConnect, "AutoConnect" }, // 2412453839
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_Base64Decode, "Base64Decode" }, // 706150036
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_Base64Encode, "Base64Encode" }, // 2514286330
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_BindEvents, "BindEvents" }, // 3418486845
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat, "ConnectTo3dcat" }, // 2542697227
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl, "ConnectToUrl" }, // 3528230118
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_Disconnect, "Disconnect" }, // 3699738823
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_SendData, "SendData" }, // 308997508
-		{ &Z_Construct_UFunction_URayvisionSocketComponent_SendMessage, "SendMessage" }, // 3796961707
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_BindEvents, "BindEvents" }, // 1628447298
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_ConnectTo3dcat, "ConnectTo3dcat" }, // 2433209688
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_ConnectToUrl, "ConnectToUrl" }, // 3934381965
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_Disconnect, "Disconnect" }, // 468184259
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_SendData, "SendData" }, // 3047844588
+		{ &Z_Construct_UFunction_URayvisionSocketComponent_SendMessage, "SendMessage" }, // 1899830366
 		{ &Z_Construct_UFunction_URayvisionSocketComponent_UnbindEvents, "UnbindEvents" }, // 154575689
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::FuncInfo) < 2048);
@@ -1018,26 +990,18 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_TestUrl_MetaData[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xe7\x94\xa8\xe4\xba\x8e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8e\xaf\xe5\xa2\x83\xe4\xb8\x8b\xe6\xb5\x8b\xe8\xaf\x95WebSocket\xe8\xbf\x9e\xe6\x8e\xa5\xe7\x9a\x84Url. \xe4\xbb\x85\xe7\x94\xa8\xe4\xba\x8e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8e\xaf\xe5\xa2\x83\xe4\xb8\x8b\xe7\x9a\x84\xe5\xbc\x80\xe5\x8f\x91\xe4\xb8\x8e\xe6\xb5\x8b\xe8\xaf\x95, \xe9\x9d\x9e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8e\xaf\xe5\xa2\x83\xe4\xb8\x8b\xe4\xbc\x9a\xe8\x87\xaa\xe5\x8a\xa8\xe5\xb0\x9d\xe8\xaf\x95\xe8\xbf\x9e\xe6\x8e\xa5\xe8\x87\xb3""3dcat\xe6\x8c\x87\xe5\xae\x9a\xe7\xab\xaf\xe5\x8f\xa3.\n" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe7\x94\xa8\xe4\xba\x8e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8e\xaf\xe5\xa2\x83\xe4\xb8\x8b\xe6\xb5\x8b\xe8\xaf\x95WebSocket\xe8\xbf\x9e\xe6\x8e\xa5\xe7\x9a\x84Url. \xe4\xbb\x85\xe7\x94\xa8\xe4\xba\x8e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8e\xaf\xe5\xa2\x83\xe4\xb8\x8b\xe7\x9a\x84\xe5\xbc\x80\xe5\x8f\x91\xe4\xb8\x8e\xe6\xb5\x8b\xe8\xaf\x95, \xe9\x9d\x9e\xe7\xbc\x96\xe8\xbe\x91\xe5\x99\xa8\xe7\x8e\xaf\xe5\xa2\x83\xe4\xb8\x8b\xe4\xbc\x9a\xe8\x87\xaa\xe5\x8a\xa8\xe5\xb0\x9d\xe8\xaf\x95\xe8\xbf\x9e\xe6\x8e\xa5\xe8\x87\xb3""3dcat\xe6\x8c\x87\xe5\xae\x9a\xe7\xab\xaf\xe5\x8f\xa3." },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_TestUrl = { "TestUrl", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(URayvisionSocketComponent, TestUrl), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_TestUrl_MetaData), Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_TestUrl_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bAutoConnect_MetaData[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xe6\x98\xaf\xe5\x90\xa6\xe8\xbf\x9b\xe8\xa1\x8c\xe8\x87\xaa\xe5\x8a\xa8\xe8\xbf\x9e\xe6\x8e\xa5.\n" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe6\x98\xaf\xe5\x90\xa6\xe8\xbf\x9b\xe8\xa1\x8c\xe8\x87\xaa\xe5\x8a\xa8\xe8\xbf\x9e\xe6\x8e\xa5." },
-#endif
 	};
 #endif
 	void Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bAutoConnect_SetBit(void* Obj)
@@ -1048,13 +1012,9 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bAutoReconnectOnFailed_MetaData[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xe8\x87\xaa\xe5\x8a\xa8\xe9\x87\x8d\xe8\xbf\x9e, \xe5\xbd\x93\xe8\xbf\x9e\xe6\x8e\xa5\xe5\xa4\xb1\xe8\xb4\xa5\xe5\x90\x8e, \xe4\xbc\x9a\xe8\x87\xaa\xe5\x8a\xa8\xe5\xb0\x9d\xe8\xaf\x95\xe9\x87\x8d\xe6\x96\xb0\xe5\xbb\xba\xe7\xab\x8b\xe8\xbf\x9e\xe6\x8e\xa5. \xe5\xaf\xb9\xe4\xba\x8e\xe5\x90\xaf\xe7\x94\xa8\xe4\xba\x86\xe9\xa2\x84\xe5\x8a\xa0\xe8\xbd\xbd\xe5\x8a\x9f\xe8\x83\xbd\xe7\x9a\x84\xe5\xba\x94\xe7\x94\xa8,\xe7\x94\xb1\xe4\xba\x8e\xe6\x9c\xac\xe5\x9c\xb0\xe7\xab\xaf\xe5\x8f\xa3\xe5\x8f\xaa\xe4\xbc\x9a\xe5\x9c\xa8\xe7\x94\xa8\xe6\x88\xb7\xe6\x8e\xa5\xe5\x85\xa5\xe5\x90\x8e\xe5\xbc\x80\xe5\x90\xaf, \xe5\x9b\xa0\xe6\xad\xa4\xe5\xbb\xba\xe8\xae\xae\xe5\x8b\xbe\xe9\x80\x89\xe6\xad\xa4\xe9\xa1\xb9. \n" },
-#endif
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe8\x87\xaa\xe5\x8a\xa8\xe9\x87\x8d\xe8\xbf\x9e, \xe5\xbd\x93\xe8\xbf\x9e\xe6\x8e\xa5\xe5\xa4\xb1\xe8\xb4\xa5\xe5\x90\x8e, \xe4\xbc\x9a\xe8\x87\xaa\xe5\x8a\xa8\xe5\xb0\x9d\xe8\xaf\x95\xe9\x87\x8d\xe6\x96\xb0\xe5\xbb\xba\xe7\xab\x8b\xe8\xbf\x9e\xe6\x8e\xa5. \xe5\xaf\xb9\xe4\xba\x8e\xe5\x90\xaf\xe7\x94\xa8\xe4\xba\x86\xe9\xa2\x84\xe5\x8a\xa0\xe8\xbd\xbd\xe5\x8a\x9f\xe8\x83\xbd\xe7\x9a\x84\xe5\xba\x94\xe7\x94\xa8,\xe7\x94\xb1\xe4\xba\x8e\xe6\x9c\xac\xe5\x9c\xb0\xe7\xab\xaf\xe5\x8f\xa3\xe5\x8f\xaa\xe4\xbc\x9a\xe5\x9c\xa8\xe7\x94\xa8\xe6\x88\xb7\xe6\x8e\xa5\xe5\x85\xa5\xe5\x90\x8e\xe5\xbc\x80\xe5\x90\xaf, \xe5\x9b\xa0\xe6\xad\xa4\xe5\xbb\xba\xe8\xae\xae\xe5\x8b\xbe\xe9\x80\x89\xe6\xad\xa4\xe9\xa1\xb9." },
-#endif
 	};
 #endif
 	void Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_bAutoReconnectOnFailed_SetBit(void* Obj)
@@ -1065,14 +1025,10 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval_MetaData[] = {
 		{ "Category", "Sockets" },
-#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xe8\x87\xaa\xe5\x8a\xa8\xe9\x87\x8d\xe8\xbf\x9e\xe9\xa2\x91\xe7\x8e\x87\n" },
-#endif
 		{ "EditCondition", "bAutoReconnect" },
 		{ "ModuleRelativePath", "Public/RayvisionSocketComponent.h" },
-#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xe8\x87\xaa\xe5\x8a\xa8\xe9\x87\x8d\xe8\xbf\x9e\xe9\xa2\x91\xe7\x8e\x87" },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval = { "ReconnectInterval", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(URayvisionSocketComponent, ReconnectInterval), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval_MetaData), Z_Construct_UClass_URayvisionSocketComponent_Statics::NewProp_ReconnectInterval_MetaData) };
@@ -1122,15 +1078,15 @@ void FReceivedJoystickMoveSignature_DelegateWrapper(const FMulticastScriptDelega
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(URayvisionSocketComponent);
 	URayvisionSocketComponent::~URayvisionSocketComponent() {}
-	struct Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics
+	struct Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_URayvisionSocketComponent, URayvisionSocketComponent::StaticClass, TEXT("URayvisionSocketComponent"), &Z_Registration_Info_UClass_URayvisionSocketComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URayvisionSocketComponent), 3246554985U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_URayvisionSocketComponent, URayvisionSocketComponent::StaticClass, TEXT("URayvisionSocketComponent"), &Z_Registration_Info_UClass_URayvisionSocketComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URayvisionSocketComponent), 333366874U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_3755663345(TEXT("/Script/RayvisionSocket"),
-		Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_RayvisionWebsocket_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_2805989472(TEXT("/Script/RayvisionSocket"),
+		Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HostProject_Plugins_RayvisionSocket_Source_RayvisionSocket_Public_RayvisionSocketComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
